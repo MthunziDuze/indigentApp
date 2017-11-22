@@ -1,0 +1,17 @@
+<ons-page ng-controller="indigentController">
+      <ons-toolbar>
+        <div class="center">Sign In</div>
+        
+      </ons-toolbar>
+
+      <div class="login-form">
+
+        <input type="email" class="text-input--underbar" ng-model="username" placeholder="Email" value="">
+        <input type="password" class="text-input--underbar" ng-model="password" placeholder="Password" value="">
+        <br><br>
+        <ons-button modifier="large" class="login-button" ng-click="login()">Log In</ons-button>
+        <br><br>
+        
+      </div>
+
+    </ons-page>

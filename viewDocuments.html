@@ -1,0 +1,17 @@
+<ons-page ng-controller="indigentController" ng-init="loadDocumentInfo()">
+ 
+    
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button>Cancel</ons-back-button>
+        </div>
+        <div class="center">Documents</div>
+    </ons-toolbar>
+
+    <div class="wrapper" ng-controller="DocCtrl">
+        <h1>{{pdfName}}</h1>
+        <ng-pdf template-url="viewer.html" canvasid="pdf" scale="page-fit"></ng-pdf>
+    </div>
+
+
+</ons-page>
